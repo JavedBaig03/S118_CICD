@@ -1,6 +1,7 @@
 .container{
     display: grid;
-    grid-template-areas: 
+    background:linear-gradient(90deg,rgb(0, 0, 0),blue,rgb(0, 0, 0));
+    grid-template-areas:
     "header header header"
     "sidebar main main"
     "footer footer footer"
@@ -10,19 +11,35 @@
     height: 90vh;
     width:90vw;
 }
-.header{
-    grid-area: header;
-    background: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
+.header {
+  grid-area: header;
+  background: linear-gradient(135deg, #000000, #2575fc, #000000);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
 }
+.header button {
+  background-color: white;
+  box-shadow: 0 4px 10px rgb(144, 0, 255);
+  color: #000000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.header button:hover {
+  background: #2575fc;
+}
+
 
 .sidebar {
     grid-area: sidebar;
-    background: #c5c0c0;
+    background: #0043b8;
     padding: 20px;
   }
 
@@ -38,7 +55,7 @@
   
   .sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: 500;
     display: block;
     padding: 10px;
@@ -54,7 +71,7 @@
   /* Highlight active route (if needed) */
   .sidebar ul li a.active {
     background-color: #007bff;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
 .footer {
@@ -67,6 +84,7 @@
 
   .main {
     grid-area: main;
+    color: white;
     padding: 20px;
   }
   
@@ -141,12 +159,12 @@
   .about-container h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #333;
+    color: #ffffff;
   }
   
   .about-container p {
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
